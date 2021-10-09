@@ -1,6 +1,6 @@
 {
-    "name": "mattketmo/cliph",
-    "description": "Example of CLI app in PHP",
+    "name": "niraj/timetoangle",
+    "description": "Example of time to angle app in PHP",
     "license": "MIT",
     "require": {
         "symfony/console": "^2.3 || ^3.0",
@@ -11,12 +11,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Cliph\\": "src/Cliph"
+            "TimeToAngle\\": "src/TimeToAngle"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Cliph\\Tests\\": "tests"
+            "TimeToAngle\\Tests\\": "tests"
         }
     },
     "scripts": {

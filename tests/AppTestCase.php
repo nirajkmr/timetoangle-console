@@ -1,8 +1,8 @@
 <?php
+namespace TimeToAngle\Tests;
 
-namespace Cliph\Tests;
-
-use Cliph\Command;
+require '../../vendor/autoload.php';
+use TimeToAngle\Command;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Input\StringInput;
 use Symfony\Component\Console\Output\StreamOutput;
@@ -13,8 +13,8 @@ abstract class AppTestCase extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->app = new Application('Cliph', 'test');
-        $this->app->add(new Command\HelloCommand());
+        $this->app = new Application('TimeToAngle', '1.0');
+        $this->app->add(new Command\TimeToAngleCommand());
         $this->app->setAutoExit(false);
     }
 

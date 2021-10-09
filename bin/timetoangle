@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/../vendor/autoload.php';
+
+use TimeToAngle\Command;
+use Symfony\Component\Console\Application;
+
+$application = new Application('TimeToAngle', '@package_version@');
+$application->add(new Command\TimeToAngleCommand());
+$application->run();
